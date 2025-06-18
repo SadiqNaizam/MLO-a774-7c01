@@ -64,10 +64,15 @@ export default {
 				}
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+        sm: 'var(--radius-sm)',   // 4px
+        DEFAULT: 'var(--radius)',  // 6px
+        md: 'var(--radius)',       // 6px (Tailwind's default 'md' often matches default)
+        lg: 'var(--radius-lg)',   // 8px
+        xl: 'var(--radius-xl)',   // 12px
 			},
+      fontFamily: {
+        sans: ['var(--font-sans)'],
+      },
 			keyframes: {
 				'accordion-down': {
 					from: {
